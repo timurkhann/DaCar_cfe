@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Document uuid="e93580ef-00c2-4dd2-a4f7-369b4e20c3b2">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПеремещениеЗапасов" category="Object">
+				<xr:TypeId>477c4fba-10d3-4f37-b5b9-408053f199f3</xr:TypeId>
+				<xr:ValueId>003b833d-fdd6-4063-876a-c57f36ee681a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПеремещениеЗапасов" category="Ref">
+				<xr:TypeId>18098a5d-9506-441a-a174-2281bfb7cac5</xr:TypeId>
+				<xr:ValueId>bca0c06e-f65d-4cee-9adf-279e58da55d5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПеремещениеЗапасов" category="Selection">
+				<xr:TypeId>b1ea1f18-0d36-4efb-955a-d9e6f3bf073a</xr:TypeId>
+				<xr:ValueId>404e9c13-62db-4415-ab21-5c6140817dc8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПеремещениеЗапасов" category="List">
+				<xr:TypeId>d7a589bc-5073-4722-aaba-c49f8039cc0f</xr:TypeId>
+				<xr:ValueId>a73eb516-9f95-4af6-b8b2-7bfa49900106</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПеремещениеЗапасов" category="Manager">
+				<xr:TypeId>30c1a73b-0041-48be-932a-b0c4ea6e455e</xr:TypeId>
+				<xr:ValueId>b95693f0-4530-4335-af43-83d210f65071</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПеремещениеЗапасов</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>c63e7296-8bd5-4572-b1ca-d62e9d4681b3</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

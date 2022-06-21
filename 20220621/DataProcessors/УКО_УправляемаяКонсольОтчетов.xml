@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<DataProcessor uuid="516c5540-005e-485b-a54a-19e7c76c3547">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.УКО_УправляемаяКонсольОтчетов" category="Object">
+				<xr:TypeId>4c7b58cb-e015-444f-a15a-4fdd20ad51a6</xr:TypeId>
+				<xr:ValueId>4e4fc5ce-73d3-4dcf-8171-7fea565fb91c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.УКО_УправляемаяКонсольОтчетов" category="Manager">
+				<xr:TypeId>b0c6365b-8e76-4be1-9d94-736ce9938d6f</xr:TypeId>
+				<xr:ValueId>4ada92c7-d34e-4f81-b16d-e5bac456e285</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УКО_УправляемаяКонсольОтчетов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управляемая консоль отчетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Managed reporting console</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.УКО_УправляемаяКонсольОтчетов.Form.Основная</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Основная</Form>
+			<Form>УКО_АнализИсполняемыхЗапросов</Form>
+			<Form>УКО_АнализПланаЗапроса</Form>
+			<Form>УКО_Вопрос</Form>
+			<Form>УКО_ВставкаПредопределенногоЭлемента</Form>
+			<Form>УКО_ВставкаСсылкиНаОбъектБД</Form>
+			<Form>УКО_ДиалогВыбораНастроек</Form>
+			<Form>УКО_ДлительнаяОперация</Form>
+			<Form>УКО_ДоступноОбновление</Form>
+			<Form>УКО_ЗагрузкаВТаблицуЗначений</Form>
+			<Form>УКО_ЗаполнениеПараметров</Form>
+			<Form>УКО_ЗарегистрироватьИзмененияВПланеОбмена</Form>
+			<Form>УКО_ИсторияВерсий</Form>
+			<Form>УКО_КодНаВстроенномЯзыке</Form>
+			<Form>УКО_КонструкторСтрокиДляОтладки</Form>
+			<Form>УКО_НастройкаСравнения</Form>
+			<Form>УКО_Настройки</Form>
+			<Form>УКО_ОбработкаРезультата</Form>
+			<Form>УКО_ПереименованиеПараметра</Form>
+			<Form>УКО_РасшифровкаДанныхСтроки</Form>
+			<Form>УКО_РедактированиеВыражения</Form>
+			<Form>УКО_РедактированиеГраницы</Form>
+			<Form>УКО_РедактированиеИдентификатора</Form>
+			<Form>УКО_РедактированиеКолонкиТаблицыЗначений</Form>
+			<Form>УКО_РедактированиеМоментаВремени</Form>
+			<Form>УКО_РедактированиеСпискаЗначений</Form>
+			<Form>УКО_РедактированиеТаблицыЗначений</Form>
+			<Form>УКО_РедактированиеТипаЗначения</Form>
+			<Form>УКО_РедактированиеУникальногоИдентификатора</Form>
+			<Form>УКО_РезультатВОтдельномОкне</Form>
+			<Form>УКО_ЭкспортВ</Form>
+			<Form>УКО_ЭкспортВоВнешнийОтчет</Form>
+			<Template>УКО_ИсторияВерсий</Template>
+			<Template>УКО_ПримерФайлаExcelДляЗагрузкиВТаблицуЗначений_ru</Template>
+			<Template>УКО_ПримерФайлаMXLДляЗагрузкиВТаблицуЗначений_ru</Template>
+			<Template>УКО_РезультатЗапроса</Template>
+			<Template>УКО_ФункцииЯзыкаЗапросов</Template>
+			<Template>УКО_ШаблонФайлаНастройкиТехнологическогоЖурнала</Template>
+			<Template>УКО_ШаблонФайловВнешнегоОтчетаERF_ru</Template>
+			<Template>УКО_ШаблоныРедактированияВыраженияВнешнегоИсточника</Template>
+			<Template>УКО_ШаблоныРедактированияВыраженияПараметр</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

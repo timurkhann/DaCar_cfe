@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Document uuid="af5f2475-ff1e-4d06-84d3-92b4306c2ef1">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ИнвентаризацияЗапасов" category="Object">
+				<xr:TypeId>1cd2bad2-64b7-48fa-80df-a5b622565cb4</xr:TypeId>
+				<xr:ValueId>7d53be27-2865-4811-a37d-634bc1ace8ab</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ИнвентаризацияЗапасов" category="Ref">
+				<xr:TypeId>63cd611d-de9b-4858-84cc-7f2c84fd28f5</xr:TypeId>
+				<xr:ValueId>8e0bda53-a5ba-4f52-a186-52dd1d76aeb3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ИнвентаризацияЗапасов" category="Selection">
+				<xr:TypeId>66e17b4a-c43f-4a63-963b-e7a026abaf9b</xr:TypeId>
+				<xr:ValueId>b1af1195-e1d6-455d-80a4-64819ef1fe6f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ИнвентаризацияЗапасов" category="List">
+				<xr:TypeId>48eaffbc-850a-4db8-8db1-fe061b6fef83</xr:TypeId>
+				<xr:ValueId>f502ad83-2101-4809-a92b-99fcf73ee506</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ИнвентаризацияЗапасов" category="Manager">
+				<xr:TypeId>f68f2f3a-70ee-4344-8b27-3c124e34c74a</xr:TypeId>
+				<xr:ValueId>fceffff1-775c-44f1-a316-b2c0dc76d0c4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ИнвентаризацияЗапасов</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>b732ead4-6656-417e-95d7-2346aa45b16d</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

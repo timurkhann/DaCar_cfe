@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="288fc2d0-7e22-4dae-bdd2-92c0240893bf">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВариантыПечатиНаборов" category="Ref">
+				<xr:TypeId>2ad188db-0b2f-40dd-ab88-13285ca5cbc2</xr:TypeId>
+				<xr:ValueId>760a7279-d016-47f3-a9b8-80f90c67eebf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВариантыПечатиНаборов" category="Manager">
+				<xr:TypeId>297d68c0-9251-488e-ab5f-e292237d566a</xr:TypeId>
+				<xr:ValueId>f6ad15fd-09da-46f1-81a7-e1fc9822c5a0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВариантыПечатиНаборов" category="List">
+				<xr:TypeId>d96a4ed0-2733-429a-81a3-c364738ce667</xr:TypeId>
+				<xr:ValueId>ce4713ec-d5f6-4a9f-828d-d8ea0c6fa2ff</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВариантыПечатиНаборов</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>6c2f2736-d7d9-487f-95ad-3786948ad771</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="8ee7de37-9b11-4e63-a600-98e8f690d11a">
+				<InternalInfo/>
+				<Properties>
+					<Name>ТолькоКомплектующие</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>e66fb606-7ce6-4ace-be2c-405dfc2144ea</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c32b6903-3a46-4fa4-865d-e7b9e47391e4">
+				<InternalInfo/>
+				<Properties>
+					<Name>ТолькоНабор</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>c1d20af9-7dd8-4bfd-aa67-aeb8221b31c8</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ff21f465-3f52-45b2-a7bc-edc54d21659a">
+				<InternalInfo/>
+				<Properties>
+					<Name>НаборИКомплектующие</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>0faad377-48f1-459c-be63-ae02c12d5d71</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

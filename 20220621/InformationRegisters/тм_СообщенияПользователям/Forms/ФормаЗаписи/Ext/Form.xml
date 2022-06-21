@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="21">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<InputField name="ПользовательКому" id="31">
+					<DataPath>Запись.ПользовательКому</DataPath>
+					<ContextMenu name="ПользовательКомуКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ПользовательКомуРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<CheckBoxField name="Срочно" id="28">
+					<DataPath>Запись.Срочно</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СрочноКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СрочноРасширеннаяПодсказка" id="30"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="23">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<InputField name="Сообщение" id="4">
+					<DataPath>Запись.Сообщение</DataPath>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="СообщениеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="СообщениеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="ПользовательОтКого" id="25">
+			<DataPath>Запись.ПользовательОтКого</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ПользовательОтКогоКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ПользовательОтКогоРасширеннаяПодсказка" id="27"/>
+		</LabelField>
+		<InputField name="ИдентификаторСообщения" id="34">
+			<DataPath>Запись.ИдентификаторСообщения</DataPath>
+			<ContextMenu name="ИдентификаторСообщенияКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ИдентификаторСообщенияРасширеннаяПодсказка" id="36"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.тм_СообщенияПользователям</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

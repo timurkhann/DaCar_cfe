@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Document uuid="27142cf5-a84e-49f4-b506-3021d24197aa">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.СписаниеЗапасов" category="Object">
+				<xr:TypeId>ac1d6be0-86f0-406a-baad-c4f19a4fe716</xr:TypeId>
+				<xr:ValueId>94b52bf6-e459-4358-a444-9c8dae0e1314</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.СписаниеЗапасов" category="Ref">
+				<xr:TypeId>b82f759a-6353-45b6-a8c1-544cdf33cf3b</xr:TypeId>
+				<xr:ValueId>a8ff2355-e2f4-4019-a391-f1933fc98873</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.СписаниеЗапасов" category="Selection">
+				<xr:TypeId>c0cf721d-f831-440b-8162-31849c0e35d0</xr:TypeId>
+				<xr:ValueId>f4bedf9b-581b-42ef-93f5-3082ea3f727a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.СписаниеЗапасов" category="List">
+				<xr:TypeId>199006d7-b236-4f08-9ab1-52f0fa59fe7a</xr:TypeId>
+				<xr:ValueId>136d568d-476e-495b-9d9f-2777ff6b6179</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.СписаниеЗапасов" category="Manager">
+				<xr:TypeId>2d1ea6a8-189c-41dd-af3a-98909e4dea48</xr:TypeId>
+				<xr:ValueId>ef04baf1-0472-42cd-bf91-b68c9374f790</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СписаниеЗапасов</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>63fc9824-0dd1-4e3b-bce6-34e0806fc11f</ExtendedConfigurationObject>
+			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.тм_ПроданныеТовары</xr:Item>
+			</RegisterRecords>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

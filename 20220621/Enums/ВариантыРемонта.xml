@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="4ab99d5d-0092-45c1-a7fd-ca2deaf58e41">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВариантыРемонта" category="Ref">
+				<xr:TypeId>83c7534b-8252-4d17-ae6f-27598409e0a7</xr:TypeId>
+				<xr:ValueId>9c7d6d8d-3e40-4007-ab42-605c147de02a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВариантыРемонта" category="Manager">
+				<xr:TypeId>cd656ba2-965c-416f-a035-431da566f2fc</xr:TypeId>
+				<xr:ValueId>0a990453-6e6c-4f39-8330-ecf30f19bb73</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВариантыРемонта" category="List">
+				<xr:TypeId>f9c8b868-ccb2-4b16-ab3d-c66f76bfcfb8</xr:TypeId>
+				<xr:ValueId>5409026f-b6a3-4ab4-8045-f1f9c9a4f7d5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВариантыРемонта</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>419a7051-750e-43b3-8e9f-1c2bc332f8be</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="721ec0ec-b02e-47eb-9900-82df851a891e">
+				<InternalInfo/>
+				<Properties>
+					<Name>НашаМастерскаяМногоэтапныйРемонт</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>30dffbff-37dc-40af-8b46-192c28c46d05</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

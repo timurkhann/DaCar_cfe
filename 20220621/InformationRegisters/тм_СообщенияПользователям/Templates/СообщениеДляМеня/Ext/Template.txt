@@ -1,0 +1,6 @@
+﻿<div class="container %Срочно">
+	%ФИО
+	<p>%Сообщение</p>
+	%Файл
+ 	<span class="time-left">%ВремяСообщения</span>
+</div>

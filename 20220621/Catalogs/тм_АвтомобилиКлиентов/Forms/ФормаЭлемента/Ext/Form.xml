@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКод" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодРасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Владелец" id="4">
+					<DataPath>Объект.Owner</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаМарка" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа марка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа марка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМаркаРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<InputField name="МаркаАвто" id="7">
+					<DataPath>1/0:d253f435-379e-4063-bf8b-b16c004ce1e2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.Owner</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="МаркаАвтоКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="МаркаАвтоРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="МодельАвто" id="10">
+					<DataPath>1/0:525b7e73-5f26-4de0-9780-74e97bdcc6e5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">1/0:d253f435-379e-4063-bf8b-b16c004ce1e2</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="МодельАвтоКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="МодельАвтоРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Автомобиль" id="88">
+			<DataPath>Объект.Автомобиль</DataPath>
+			<ContextMenu name="АвтомобильКонтекстноеМеню" id="89"/>
+			<ExtendedTooltip name="АвтомобильРасширеннаяПодсказка" id="90"/>
+			<Events>
+				<Event name="OnChange">АвтомобильПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Спецификация" id="85">
+			<DataPath>Объект.Спецификация</DataPath>
+			<ContextMenu name="СпецификацияКонтекстноеМеню" id="86"/>
+			<ExtendedTooltip name="СпецификацияРасширеннаяПодсказка" id="87"/>
+		</InputField>
+		<UsualGroup name="ГруппаДанныеАвто" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные авто</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа данные авто</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДанныеАвтоРасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="77">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<InputField name="ГосударственныйНомер" id="60">
+							<DataPath>Объект.ГосударственныйНомер</DataPath>
+							<ContextMenu name="ГосударственныйНомерКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ГосударственныйНомерРасширеннаяПодсказка" id="62"/>
+							<Events>
+								<Event name="EditTextChange">ГосударственныйНомерИзменениеТекстаРедактирования</Event>
+							</Events>
+						</InputField>
+						<InputField name="Регион" id="63">
+							<DataPath>Объект.Регион</DataPath>
+							<ContextMenu name="РегионКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="Пробег" id="66">
+							<DataPath>Объект.Пробег</DataPath>
+							<ContextMenu name="ПробегКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ПробегРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="ГодВыпуска" id="57">
+							<DataPath>Объект.ГодВыпуска</DataPath>
+							<ContextMenu name="ГодВыпускаКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ГодВыпускаРасширеннаяПодсказка" id="59"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="VIN" id="54">
+					<DataPath>Объект.VIN</DataPath>
+					<ContextMenu name="VINКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="VINРасширеннаяПодсказка" id="56"/>
+					<Events>
+						<Event name="EditTextChange">VINИзменениеТекстаРедактирования</Event>
+					</Events>
+				</InputField>
+				<InputField name="НомерКузова" id="69">
+					<DataPath>Объект.НомерКузова</DataPath>
+					<ContextMenu name="НомерКузоваКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="НомерКузоваРасширеннаяПодсказка" id="71"/>
+					<Events>
+						<Event name="EditTextChange">НомерКузоваИзменениеТекстаРедактирования</Event>
+					</Events>
+				</InputField>
+				<InputField name="НомерДвигателя" id="72">
+					<DataPath>Объект.НомерДвигателя</DataPath>
+					<ContextMenu name="НомерДвигателяКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="НомерДвигателяРасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="EditTextChange">НомерДвигателяИзменениеТекстаРедактирования</Event>
+					</Events>
+				</InputField>
+				<InputField name="МодельКузова" id="91">
+					<DataPath>Объект.МодельКузова</DataPath>
+					<ContextMenu name="МодельКузоваКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="МодельКузоваРасширеннаяПодсказка" id="93"/>
+				</InputField>
+				<InputField name="МодельДвигателя" id="94">
+					<DataPath>Объект.МодельДвигателя</DataPath>
+					<ContextMenu name="МодельДвигателяКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="МодельДвигателяРасширеннаяПодсказка" id="96"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.тм_АвтомобилиКлиентов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

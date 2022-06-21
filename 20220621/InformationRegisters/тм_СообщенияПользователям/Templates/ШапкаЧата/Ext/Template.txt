@@ -1,0 +1,94 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 20px;
+}
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    word-wrap:break-word;
+}
+.darker {
+     display: flex;
+    border-color: #ccc;
+    justify-content: flex-end;
+    word-break: break-all;
+}
+.background {
+    background-color: #9cc4d9;  
+}
+.urgently {
+      background-color: #f7f7a1;
+  } 
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;                      
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+    bottom: 0;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.image-right {
+    float: right;
+    color: #6c4698;
+    bottom: 0;     
+    text-decoration:underline;
+ }
+   
+ .image-left {
+    float: left;
+    color: #6c4698;
+    bottom: 0;
+    text-decoration:underline;
+ } 
+ 
+ .fullName-right {
+    float: right;
+    color: #6c4698;
+    bottom: 0;
+       
+    text-decoration:underline
+ }  
+   
+ .fullName-left {
+    float: left;
+    color: #6c4698;
+    bottom: 0;
+    text-decoration:underline 
+ }       
+</style>
+</head>
+<!-- <body onload="window.scrollTo(0, Элементы.Чат.Документ.body.scrollHeight)"> --> 
+<body>

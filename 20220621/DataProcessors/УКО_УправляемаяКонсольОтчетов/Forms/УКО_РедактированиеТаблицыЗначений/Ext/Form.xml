@@ -1,0 +1,800 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<ButtonGroup name="ФормаГруппаКнопки" id="51">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Кнопки (группа)</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Buttons (group)</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаГруппаКнопкиРасширеннаяПодсказка" id="52"/>
+				<ChildItems>
+					<Button name="СохранитьИЗакрыть" id="43">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.СохранитьИЗакрыть</CommandName>
+						<ExtendedTooltip name="СохранитьИЗакрытьРасширеннаяПодсказка" id="44"/>
+					</Button>
+					<Button name="Закрыть" id="45">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.Close</CommandName>
+						<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="46"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="КоманднаяПанельТаблицы" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица (командная панель)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Table (command panel)</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="КоманднаяПанельТаблицыРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<Popup name="ЗагрузкаПодменю" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Load</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>StdPicture.OpenFile</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Representation>Picture</Representation>
+					<ExtendedTooltip name="ЗагрузкаПодменюРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Button name="ЗагрузкаДанныхИзТабличногоДокумента" id="70">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗагрузкаИзТабличногоДокумента</CommandName>
+							<ExtendedTooltip name="ЗагрузкаДанныхИзТабличногоДокументаРасширеннаяПодсказка" id="71"/>
+						</Button>
+						<Button name="ЗагрузкаИзБуфераОбмена" id="78">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗагрузкаИзБуфераОбмена</CommandName>
+							<ExtendedTooltip name="ЗагрузкаИзБуфераОбменаРасширеннаяПодсказка" id="79"/>
+						</Button>
+						<Button name="ЗагрузкаЗначениеИзСтрокиВнутр" id="66">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗагрузкаЗначениеИзСтрокиВнутр</CommandName>
+							<ExtendedTooltip name="ЗагрузкаЗначениеИзСтрокиВнутрРасширеннаяПодсказка" id="67"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+				<Popup name="СохранениеПодменю" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Save</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>StdPicture.SaveFile</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Representation>Picture</Representation>
+					<ExtendedTooltip name="СохранениеПодменюРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<Button name="СохранениеЗначениеВСтрокуВнутр" id="68">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.СохранениеЗначениеВСтрокуВнутр</CommandName>
+							<ExtendedTooltip name="СохранениеЗначениеВСтрокуВнутрРасширеннаяПодсказка" id="69"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+				<ButtonGroup name="ФормаГруппаИзменитьФорму" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменить форму (группа)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Change form (group)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФормаГруппаИзменитьФормуРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<Button name="ФормаИзменитьФорму" id="76">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="77"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+			</ChildItems>
+		</CommandBar>
+		<UsualGroup name="ГруппаКолонки" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Columns</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<TitleDataPath>КоличествоКолонок</TitleDataPath>
+			<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Table name="Колонки" id="14">
+					<Representation>List</Representation>
+					<CommandBarLocation>Top</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Width>45</Width>
+					<HeightInTableRows>4</HeightInTableRows>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Колонки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Columns</v8:content>
+						</v8:item>
+					</Title>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="КолонкиКонтекстноеМеню" id="15">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="КолонкиКонтекстноеМенюДобавитьКолонку" id="80">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДобавитьКолонку</CommandName>
+								<ExtendedTooltip name="КолонкиКонтекстноеМенюДобавитьКолонкуРасширеннаяПодсказка" id="81"/>
+							</Button>
+							<Button name="КолонкиКонтекстноеМенюИзменить" id="86">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Колонки.StandardCommand.Change</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Изменить ...</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Edit ...</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="КолонкиКонтекстноеМенюИзменитьРасширеннаяПодсказка" id="87"/>
+							</Button>
+							<ButtonGroup name="КолонкиКонтекстноеМенюГруппаПереместить" id="88">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Перемещение (группа контекстного меню</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Navigation (context menu group</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="КолонкиКонтекстноеМенюГруппаПереместитьРасширеннаяПодсказка" id="89"/>
+								<ChildItems>
+									<Button name="КолонкиКонтекстноеМенюПереместитьКолонкуВверх" id="47">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПереместитьКолонкуВверх</CommandName>
+										<ExtendedTooltip name="КолонкиКонтекстноеМенюПереместитьКолонкуВверхРасширеннаяПодсказка" id="48"/>
+									</Button>
+									<Button name="КолонкиКонтекстноеМенюПереместитьКолонкуВниз" id="49">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПереместитьКолонкуВниз</CommandName>
+										<ExtendedTooltip name="КолонкиКонтекстноеМенюПереместитьКолонкуВнизРасширеннаяПодсказка" id="50"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<Button name="КолонкиКонтекстноеМенюКопироватьВБуферОбмена" id="82">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Колонки.StandardCommand.CopyToClipboard</CommandName>
+								<ExtendedTooltip name="КолонкиКонтекстноеМенюКопироватьВБуферОбменаРасширеннаяПодсказка" id="83"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="КолонкиКоманднаяПанель" id="16">
+						<ChildItems>
+							<Button name="КолонкиДобавитьКолонку" id="72">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДобавитьКолонку</CommandName>
+								<ExtendedTooltip name="КолонкиДобавитьКолонкуРасширеннаяПодсказка" id="73"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="КолонкиРасширеннаяПодсказка" id="17"/>
+					<SearchStringAddition name="КолонкиСтрокаПоиска" id="18">
+						<AdditionSource>
+							<Item>Колонки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КолонкиСтрокаПоискаКонтекстноеМеню" id="19"/>
+						<ExtendedTooltip name="КолонкиСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КолонкиСостояниеПросмотра" id="21">
+						<AdditionSource>
+							<Item>Колонки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КолонкиСостояниеПросмотраКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="КолонкиСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КолонкиУправлениеПоиском" id="24">
+						<AdditionSource>
+							<Item>Колонки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КолонкиУправлениеПоискомКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="КолонкиУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeDeleteRow">КолонкиПередУдалением</Event>
+						<Event name="OnActivateRow">КолонкиПриАктивизацииСтроки</Event>
+						<Event name="BeforeRowChange">КолонкиПередНачаломИзменения</Event>
+						<Event name="OnChange">КолонкиПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="КолонкиИмя" id="27">
+							<DataPath>Колонки.Имя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="КолонкиИмяКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="КолонкиИмяРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<InputField name="КолонкиТип" id="30">
+							<DataPath>Колонки.Тип</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="КолонкиТипКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="КолонкиТипРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<CheckBoxField name="КолонкиИндексировать" id="55">
+							<DataPath>Колонки.Индексировать</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КолонкиИндексироватьКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="КолонкиИндексироватьРасширеннаяПодсказка" id="57"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаЗначений" id="1">
+			<Representation>List</Representation>
+			<Width>60</Width>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаЗначений</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица значений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Table of values</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаЗначенийКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаЗначенийКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ТаблицаЗначенийРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаЗначенийСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаЗначений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗначенийСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаЗначенийСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаЗначенийСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаЗначений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗначенийСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаЗначенийСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаЗначенийУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаЗначений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗначенийУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаЗначенийУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnEditEnd">ТаблицаЗначенийПриОкончанииРедактирования</Event>
+				<Event name="OnChange">ТаблицаЗначенийПриИзменении</Event>
+			</Events>
+		</Table>
+		<UsualGroup name="БиблиотекаКартинок" id="90">
+			<Visible>false</Visible>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="БиблиотекаКартинокРасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ВставитьИзБуфераОбмена" id="92">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ВставитьИзБуфераОбменаКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ВставитьИзБуфераОбменаРасширеннаяПодсказка" id="94"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипТип" id="95">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипТипКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипТипРасширеннаяПодсказка" id="97"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипЧисло" id="98">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипЧислоКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипЧислоРасширеннаяПодсказка" id="100"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипСтрока" id="101">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипСтрокаКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипСтрокаРасширеннаяПодсказка" id="103"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипВидДвиженияНакопления" id="104">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипВидДвиженияНакопленияКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипВидДвиженияНакопленияРасширеннаяПодсказка" id="106"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипХранилищеЗначения" id="107">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипХранилищеЗначенияКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипХранилищеЗначенияРасширеннаяПодсказка" id="109"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипУникальныйИдентификатор" id="110">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипУникальныйИдентификаторКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипУникальныйИдентификаторРасширеннаяПодсказка" id="112"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипСоставной" id="113">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипСоставнойКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипСоставнойРасширеннаяПодсказка" id="115"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипПолнаяДата" id="116">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипПолнаяДатаКонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипПолнаяДатаРасширеннаяПодсказка" id="118"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипДата" id="119">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипДатаКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипДатаРасширеннаяПодсказка" id="121"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипВремя" id="122">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипВремяКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипВремяРасширеннаяПодсказка" id="124"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ТипБулево" id="125">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ТипБулевоКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ТипБулевоРасширеннаяПодсказка" id="127"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_МоментВремени" id="128">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_МоментВремениКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_МоментВремениРасширеннаяПодсказка" id="130"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_ДлительнаяОперацияАнимация48" id="131">
+					<Picture>
+						<xr:Abs>Picture.gif</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ДлительнаяОперацияАнимация48КонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ДлительнаяОперацияАнимация48РасширеннаяПодсказка" id="133"/>
+				</PictureDecoration>
+				<PictureDecoration name="БиблиотекаКартинокУКО_Граница" id="134">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ГраницаКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ГраницаРасширеннаяПодсказка" id="136"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УКО_УправляемаяКонсольОтчетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Колонки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Columns</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тип" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Type</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Индексировать" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индексировать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаЗначений" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица значений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Table of values</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КоличествоКолонок" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество колонок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Number of columns</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Адрес" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнениеЗаголовка" id="10">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтмеченоСтрок" id="12">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Редактирование" id="13">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьИЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и закрыть</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Save &amp;&amp; close</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьИЗакрыть</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПереместитьКолонкуВверх" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить вверх</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Move up</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить колонку вверх</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>To move the column up</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveUp</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПереместитьКолонкуВверх</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПереместитьКолонкуВниз" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить вниз</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Move down</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить колонку вниз</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>To move the column down</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveDown</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПереместитьКолонкуВниз</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузкаЗначениеИзСтрокиВнутр" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЗначениеИзСтрокиВнутр ...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>ValueFromStringInternal ...</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗагрузкаЗначениеИзСтрокиВнутр</Action>
+		</Command>
+		<Command name="СохранениеЗначениеВСтрокуВнутр" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЗначениеВСтрокуВнутр ...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>ValueToStringInternal ...</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СохранениеЗначениеВСтрокуВнутр</Action>
+		</Command>
+		<Command name="ЗагрузкаИзТабличногоДокумента" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Из табличного документа ...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>From a tabular document ...</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗагрузкаИзТабличногоДокумента</Action>
+		</Command>
+		<Command name="ДобавитьКолонку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить ...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add ...</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьКолонку</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗагрузкаИзБуфераОбмена" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Из буфера обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>From clipboard</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка из буфера обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Download from clipboard ValueFromStringInternal</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузкаИзБуфераОбмена</Action>
+		</Command>
+	</Commands>
+</Form>

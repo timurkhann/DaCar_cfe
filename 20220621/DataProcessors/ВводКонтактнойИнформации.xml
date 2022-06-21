@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<DataProcessor uuid="96dbe53a-f125-4c94-b6dd-2b3e8a2da6be">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ВводКонтактнойИнформации" category="Object">
+				<xr:TypeId>72f9c877-5052-451f-aae2-0858f10b2fac</xr:TypeId>
+				<xr:ValueId>acb9c33a-faa8-4ab3-bf72-3d91e64dbd2c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ВводКонтактнойИнформации" category="Manager">
+				<xr:TypeId>4adebab5-0aca-420b-bea6-e6d766bcabf6</xr:TypeId>
+				<xr:ValueId>e3cac020-d435-4291-a5ea-017652b91473</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВводКонтактнойИнформации</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>5d9c0841-6ea6-48dc-a53b-9f19894750f8</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ВводТелефона</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаНазад" id="8">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Назад</CommandName>
+				<ExtendedTooltip name="ФормаНазадРасширеннаяПодсказка" id="9"/>
+			</Button>
+			<Button name="ФормаДалее" id="10">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Далее</CommandName>
+				<ExtendedTooltip name="ФормаДалееРасширеннаяПодсказка" id="11"/>
+			</Button>
+			<Button name="ФормаЗагрузить" id="44">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Загрузить</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьРасширеннаяПодсказка" id="45"/>
+			</Button>
+			<ButtonGroup name="ФормаГруппаИзменитьФорму" id="48">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Изменить форму (группа)</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Change form (group)</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаГруппаИзменитьФормуРасширеннаяПодсказка" id="49"/>
+				<ChildItems>
+					<Button name="ФормаИзменитьФорму" id="50">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+						<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="51"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы (группа)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages (group)</v8:content>
+				</v8:item>
+			</Title>
+			<Width>60</Width>
+			<Height>18</Height>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<Page name="СтраницаЗагрузкаФайла" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка файла</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>File download</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="СтраницаЗагрузкаФайлаРасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<UsualGroup name="ПримерыФайлов" id="15">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Примеры</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Sample files (group)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПримерыФайловРасширеннаяПодсказка" id="16"/>
+							<ChildItems>
+								<Button name="ПримерMXL" id="17">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ПримерMXL</CommandName>
+									<ExtendedTooltip name="ПримерMXLРасширеннаяПодсказка" id="18"/>
+								</Button>
+								<Button name="ПримерExcel" id="52">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ПримерExcel</CommandName>
+									<ExtendedTooltip name="ПримерExcelРасширеннаяПодсказка" id="53"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ПолноеИмяФайла" id="1">
+							<DataPath>ПолноеИмяФайла</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ChoiceButton>true</ChoiceButton>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ПолноеИмяФайлаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПолноеИмяФайлаРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="StartChoice">ПолноеИмяФайлаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаЗагрузкаДанных" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка данных (страница)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Loading data (page)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаЗагрузкаДанныхРасширеннаяПодсказка" id="22"/>
+					<ChildItems>
+						<Table name="ЗагружаемыеКолонки" id="23">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>КолонкиФайла</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загружаемые колонки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Downloadable columns</v8:content>
+								</v8:item>
+							</Title>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗагружаемыеКолонкиКонтекстноеМеню" id="24"/>
+							<AutoCommandBar name="ЗагружаемыеКолонкиКоманднаяПанель" id="25">
+								<ChildItems>
+									<Button name="ЗагружаемыеКолонкиУстановитьВсе" id="54">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьВсе</CommandName>
+										<ExtendedTooltip name="ЗагружаемыеКолонкиУстановитьВсеРасширеннаяПодсказка" id="55"/>
+									</Button>
+									<Button name="ЗагружаемыеКолонкиСнятьВсе" id="56">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьВсе</CommandName>
+										<ExtendedTooltip name="ЗагружаемыеКолонкиСнятьВсеРасширеннаяПодсказка" id="57"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗагружаемыеКолонкиРасширеннаяПодсказка" id="26"/>
+							<SearchStringAddition name="ЗагружаемыеКолонкиСтрокаПоиска" id="27">
+								<AdditionSource>
+									<Item>ЗагружаемыеКолонки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗагружаемыеКолонкиСтрокаПоискаКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ЗагружаемыеКолонкиСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗагружаемыеКолонкиСостояниеПросмотра" id="30">
+								<AdditionSource>
+									<Item>ЗагружаемыеКолонки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗагружаемыеКолонкиСостояниеПросмотраКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="ЗагружаемыеКолонкиСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗагружаемыеКолонкиУправлениеПоиском" id="33">
+								<AdditionSource>
+									<Item>ЗагружаемыеКолонки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗагружаемыеКолонкиУправлениеПоискомКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="ЗагружаемыеКолонкиУправлениеПоискомРасширеннаяПодсказка" id="35"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="ЗагружаемыеКолонкиГруппа" id="46">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group</v8:content>
+										</v8:item>
+									</Title>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ЗагружаемыеКолонкиГруппаРасширеннаяПодсказка" id="47"/>
+									<ChildItems>
+										<CheckBoxField name="ЗагружаемыеКолонкиЗагружать" id="39">
+											<DataPath>КолонкиФайла.Загружать</DataPath>
+											<EditMode>Directly</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружаемыеКолонкиЗагружатьКонтекстноеМеню" id="40"/>
+											<ExtendedTooltip name="ЗагружаемыеКолонкиЗагружатьРасширеннаяПодсказка" id="41"/>
+										</CheckBoxField>
+										<InputField name="ЗагружаемыеКолонкиИдентификатор" id="36">
+											<DataPath>КолонкиФайла.Идентификатор</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗагружаемыеКолонкиИдентификаторКонтекстноеМеню" id="37"/>
+											<ExtendedTooltip name="ЗагружаемыеКолонкиИдентификаторРасширеннаяПодсказка" id="38"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="БиблиотекаКартинок" id="58">
+			<Visible>false</Visible>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="БиблиотекаКартинокРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<PictureDecoration name="БиблиотекаКартинокУКО_Excel" id="60">
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="БиблиотекаКартинокУКО_ExcelКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="БиблиотекаКартинокУКО_ExcelРасширеннаяПодсказка" id="62"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПолноеИмяФайла" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное имя файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Full file name</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Шаг" id="2">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КолонкиФайла" id="4">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Идентификатор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>ID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Загружать" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загружать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Upload</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерКолонки" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АдресФайла" id="5">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Объект" id="6">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УКО_УправляемаяКонсольОтчетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Назад" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;&lt; Назад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>&lt;&lt; Backward</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Назад</Action>
+		</Command>
+		<Command name="Далее" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее &gt;&gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Forwards &gt;&gt; </v8:content>
+				</v8:item>
+			</Title>
+			<Action>Далее</Action>
+		</Command>
+		<Command name="ПримерMXL" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>MXL</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>MXL</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПримерMXL</Action>
+		</Command>
+		<Command name="Загрузить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Download</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Загрузить</Action>
+		</Command>
+		<Command name="ПримерExcel" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Excel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Excel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пример Excel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Sample Excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПримерExcel</Action>
+		</Command>
+		<Command name="УстановитьВсе" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Install all</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьВсе</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СнятьВсе" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remove all</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьВсе</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="b52a50c0-94a7-4242-8b95-2b1ea38fe086">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СостоянияЗаказНарядов" category="Object">
+				<xr:TypeId>59030960-ff4e-4c63-beb6-5ec173e54669</xr:TypeId>
+				<xr:ValueId>acf73f9b-1efb-44a5-aec1-666a2f88adb6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СостоянияЗаказНарядов" category="Ref">
+				<xr:TypeId>4968ac10-1efc-475d-aa8b-15e4df2e0053</xr:TypeId>
+				<xr:ValueId>005d946b-76ed-4fc6-be90-2bba80a5a2e4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СостоянияЗаказНарядов" category="Selection">
+				<xr:TypeId>88e66645-b96e-4ed1-985e-23b71555a729</xr:TypeId>
+				<xr:ValueId>ce84d98c-ee75-456b-9bd3-68650a1fbae1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СостоянияЗаказНарядов" category="List">
+				<xr:TypeId>31e90d6a-6044-47ca-bcd7-74a8ecd6a750</xr:TypeId>
+				<xr:ValueId>40c97abf-de5b-475d-b6dd-5c330656a672</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СостоянияЗаказНарядов" category="Manager">
+				<xr:TypeId>508fbec7-c664-4ea4-959c-33a6dd3e1e94</xr:TypeId>
+				<xr:ValueId>6b97be84-c953-460a-abe0-5b6f851a33f8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СостоянияЗаказНарядов</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>7cbaaec6-0d65-405b-ba1b-1100760d9c96</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

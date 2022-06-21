@@ -1,0 +1,8 @@
+﻿<div class="container background %Срочно">  
+	%ФИО
+    <div class=" darker">
+      <p>%Сообщение</p>
+    </div>
+    %Файл
+    <p class="time-right">%ВремяСообщения</p>
+ </div>
